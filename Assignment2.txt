@@ -1,5 +1,1 @@
-echo "Name: Your Name, Roll No: 12345" > Assignment2.txt
-git status
-git add Assignment2.txt
-git commit -m "Add Assignment2.txt with my details"
-git push origin main
+Name: Hisham, Roll No: 2630173
