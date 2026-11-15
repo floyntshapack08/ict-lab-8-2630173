@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Society - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Computer Society Registration</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="events.html">Events</a> |
+    <a href="register.html">Register</a>
+</nav>
+
+<main>
+
+    <h2>Membership Registration Form</h2>
+
+    <form action="register.html" method="post">
+
+        <!-- Personal Details -->
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name"
+                   required autofocus>
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="name@example.com" required>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"
+                   minlength="8" required>
+            <br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="03001234567"
+                   pattern="[0-9]{11}"
+                   title="Enter exactly 11 digits">
+            <br><br>
+
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website"
+                   placeholder="https://" readonly>
+            <br><br>
+
+            <label for="semester">Semester:</label><br>
+            <input type="number" id="semester" name="semester"
+                   min="1" max="8">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Other Input Types -->
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="color">Favourite Colour:</label><br>
+            <input type="color" id="color" name="color"
+                   value="#1f3a5f">
+            <br><br>
+
+            <label for="experience">Experience Level:</label><br>
+            <input type="range" id="experience" name="experience"
+                   min="1" max="10" value="5">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Preferences -->
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>Gender:</p>
+
+            <input type="radio" id="male" name="gender"
+                   value="male" checked>
+            
+
+            <input type="radio" id="female" name="gender"
+                   value="female">
+            
+
+            <br><br>
+
+            <label for="dept">Department:</label><br>
+
+            <select id="dept" name="dept" multiple>
+                <option value="cs" selected>
+                    Computer Science
+                </option>
+
+                <option value="se">
+                    Software Engineering
+                </option>
+
+                <option value="ee">
+                    Electrical Engineering
+                </option>
+
+                <option value="it">
+                    Information Technology
+                </option>
+            </select>
+
+            <br><br>
+
+            <p>Interests:</p>
+<input type="checkbox" id="web"
+       name="interest" value="web">
+
+<input type="checkbox" id="ai"
+       name="interest" value="ai">
+
+<input type="checkbox" id="network"
+       name="interest" value="network">
+
+<input type="checkbox" id="gaming"
+       name="interest" value="gaming">
+            
+        </fieldset>
+
+        <br>
+
+        <!-- Profile Information -->
+
+        <fieldset>
+            <legend>Profile Information</legend>
+
+            <label for="photo">Profile Photo:</label><br>
+            <input type="file" id="photo" name="photo"
+                   accept="image/*">
+            <br><br>
+
+            <label for="about">About You:</label><br>
+            <textarea id="about" name="about"
+                      rows="4" cols="40"
+                      maxlength="200"
+                      placeholder="Tell us about yourself"></textarea>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>Computer Society</p>
+</footer>
+
+</body>
+</html>
